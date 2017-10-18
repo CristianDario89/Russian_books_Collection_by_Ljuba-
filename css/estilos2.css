@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css?family=Manuale:400,500');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body{font-family: 'Roboto', sans-serif;}
+
+
+/*TIPOGRAFIAS*/
+h1,h2,h3,h4,h5,h6,p{font-family: 'Roboto', sans-serif;}
+
+h1{
+    font-size: 2.5rem;
+     font-weight: 300;
+}
+h2{
+    font-size: 2rem;
+     font-weight: 300;
+}
+h3{
+    font-size: 1.75rem;
+     font-weight: 300;
+}
+h4{
+    font-size: 1.5rem;
+     font-weight: 400;
+}
+h5{
+    font-size: 1.5rem;
+     font-weight: 300;
+}
+
+p{font-weight: 300;}
+
+/*FIN TIOGRAFIAS*/
+
+
+/*FONDOS*/
+.fondo{
+            background: url('../img/iron.jpg');
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+         }
+.fondo-2{
+    background-color: rgba(0,0,0,.5);
+    height: 80vh;
+}
+
+.bg-fondo-claro{
+  background-color: #fefeac;  
+  }
+.bg-danger{
+    background-color: #f38181 !important;
+}
+.fondo-nav{background: rgba(255,255,255,.7)}
+/*FIIN   FONDOS*/
+
+
+.btn{ /*sobreescribimos la clase x defecto de 1 rem*/
+    font-size: 1.25rem; 
+    font-weight: 300;
+}
+/*margenes y padding*/
+.pb-25{
+    padding-bottom: 2.5rem;
+}
+
+/*iconos*/
+.iconos{
+    font-size: 2.25rem;
+}
+
+
+/*fin ICONOS*/
+
+
+/*otros*/
+.form-control{
+border: 1px solid rgba(0,0,0,1);
+    }
+
+
+
+/*Tumbeando*/ 
+/* JSP*/
+
+.tit-insert{
+    text-align: center;
+    background: linear-gradient(to top, aqua, pink);
+   
+}
+
+.tit-edit{
+    font-size: 50px;
+    text-align: center;
+     color: transparent;
+    background: -webkit-linear-gradient(left,#ff2d2d,#003de2,#02ce58);
+    -webkit-background-clip: text;
+}
+ 
+.pointer{
+    cursor: pointer;
+}
+
+h1 .link-ppal{
+    text-decoration: none;
+   
+}
+
+/*Tumbeando HTML*/
+
+.rela{
+    position: relative;
+}
+.titulazo{
+    position: absolute;
+    
+     width: 88%;
+      padding: 5%;
+      color: #FFF;
+      background-color: rgba(0,0,0,.4);
+      font-size: 1.3em;
+    text-align: center;
+}
+
+.tit-s2{
+     display: inline;
+    text-shadow: 2px 2px grey;  
+     color: transparent;
+    background: -webkit-linear-gradient(left,#ff2d2d,#003de2,#02ce58);
+    -webkit-background-clip: text;
+}
+ 
+#see-more:hover{background: steelblue;color: white;text-decoration: none;}
+ 
+
+.parrKID{
+    font-family: 'Indie Flower', cursive; 
+    background: black;
+    color: wheat;
+}

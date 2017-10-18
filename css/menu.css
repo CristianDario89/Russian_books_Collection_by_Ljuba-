@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Malvinas';
+  src:  url('../fonts/fonts3/Malvinas.eot?ra06or');
+  src:  url('../fonts/fonts3/Malvinas.eot?ra06or#iefix') format('embedded-opentype'),
+    url('../fonts/fonts3/Malvinas.ttf?ra06or') format('truetype'),
+    url('../fonts/fonts3/Malvinas.woff?ra06or') format('woff'),
+    url('../fonts/fonts3/Malvinas.svg?ra06or#Malvinas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'Malvinas';
+  src:  url('../fonts/fonts2/Malvinas.eot?dvkoih');
+  src:  url('../fonts/fonts2/Malvinas.eot?dvkoih#iefix') format('embedded-opentype'),
+    url('../fonts/fonts2/Malvinas.ttf?dvkoih') format('truetype'),
+    url('../fonts/fonts2/Malvinas.woff?dvkoih') format('woff'),
+    url('../fonts/fonts2/Malvinas.svg?dvkoih#Malvinas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+/*MENUUUUUUUUUUUUUUUUUUUUUUUUU*/
+
+.menu{list-style: none; 
+    line-height: 42px; /*altura d linea, espacio entre los li*/
+     margin: 2em auto;
+  /*  outline: 1px solid red;*/ /*nos permite ver d q tam es our elementos, no consume px, mas q nada para ver como va la maquetacion*/
+    padding-left: 0; /*sacar espacio x defecto q le da el navegador a todos los elem d lista*/
+    
+    
+    /*ahora darle ancho */
+    width: 15em;  /*luego centrarlo con el margin: auto*/
+}
+.menu a{color: #ddd; text-decoration: none; text-transform: uppercase;
+width: 100%;
+padding-left: 1em;}
+
+.menu li{ 
+/*border-left: 3px solid rgba(255,255,255,.2); */
+    /*hacemos asi el border left pa q dsp el efecto sombra-hover lo haga pa adentro*/
+    box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+    padding-left: 1em;
+    margin-bottom: 5px;
+    
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: .5s;  /*luego , colocarli el width 100% a 'a' para q el efecto sea oa todo su ancho*/
+}
+.menu li:hover{
+   box-shadow: 15em 0 rgba(255,255,255,.2) inset; 
+}
+
+ /*iconos*/
+
+.blog:before {
+  content: "\e905";
+     font-family: 'Malvinas';
+    padding-right: 1em;
+}
+
+
+/*
+.menus:before {
+  content: "\e9a3";
+    font-family: 'Malvinas';
+    padding-right: 1em;
+}*/
+.reservas:before {
+  content: "\e9b8";
+     font-family: 'Malvinas';
+    padding-right: 1em;
+}
+.contacto:before {
+  content: "\ea83";
+     font-family: 'Malvinas';
+    padding-right: 1em;
+}
+
+/*posucion responsive  menuu*/
+
+nav.menu-nav{
+  background: rgba(0,0,0,.8); 
+    box-sizing: border-box; /*pa q no desmaquete y ap no aparezca el scroll*/
+    padding-right: .25em;  /*el pequeño espacio entre el box-shadow y el borde*/
+   padding-top: 3em;
+    
+    position: absolute;
+    left: -18em;
+    top: 0;
+    transition: all.3s;
+    z-index: 20;/*x las dudas pa q aprezca encima/arriba, mientras mas alto es el z-index mas caapas sobrepasara*/
+    height: 100%;
+}
+
+nav.menu-nav.mostrar{
+     left: 0;
+}
+ 
+#mostrar-nav{
+     background: url('../img/boton-de-menu.png');
+    color: white;
+    cursor: pointer;
+   position: absolute;
+    top:1em;
+    left: 2em;
+     z-index: 30;
+   width: 30px;height: 30px;
+}
+ 
