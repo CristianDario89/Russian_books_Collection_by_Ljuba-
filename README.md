@@ -8,3 +8,6 @@ upgrade or delete any book, as a matter of fact, the admin can make the same stu
 - The books database's manipulation is carried out with JSP.
 
 -The website design was made with Bootstrap 4 and CSS.
+
+Take a look! :)
+https://cristiandario89.github.io/Russian_books_Collection_by_Ljuba-/index.html
